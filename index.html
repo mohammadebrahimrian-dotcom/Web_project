@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AWCC مخابراتي سیستم - د مشتریانو، سیمکارتونو او بیل مدیریت">
+    <meta name="keywords" content="AWCC, telecom system, customers, billing, SIM management">
+
+    <title>AWCC - د مخابراتي خدماتو سیستم</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📡</span>
+                <span>AWCC سیستم</span>
+            </a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="mobile-menu-toggle">
+                <span></span><span></span><span></span>
+            </label>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">کور پاڼه</a></li>
+                    <li><a href="features.html">ځانګړتیاوې</a></li>
+                    <li><a href="customers.html">مشتریان</a></li>
+                    <li><a href="simcards.html">سیمکارتونه</a></li>
+                    <li><a href="billing.html">بیل</a></li>
+                    <li><a href="contact.html">اړیکه</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="login.html" class="btn btn-secondary">ننوتل</a>
+                    <a href="signup.html" class="btn btn-highlight">نوم لیکنه</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--this is hero section-->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>افغان وایرلس نیټورک شبکه</h1>
+            <p>دا سیستم د افغان وایرلس مخابراتي شرکت لپاره د مشتریانو، سیمکارتونو، غوښتنلیکونو، میسجونه، انټرنیټ ډیټا، او بیل مدیریت لپاره یوشه حل وړاندی کوي.</p>
+            <div class="hero-illustration">
+                <div class="illustration-item"><span class="illustration-icon">👨🏼‍🤝‍👨🏽</span><span class="illustration-text">مشتریان</span></div>
+                <div class="illustration-item"><span class="illustration-icon">📱</span><span class="illustration-text">سیمکارتونه</span></div>
+                <div class="illustration-item"><span class="illustration-icon">📞</span><span class="illustration-text">غوښتنلیکونه</span></div>
+                <div class="illustration-item"><span class="illustration-icon">💬</span><span class="illustration-text">میسجونه</span></div>
+                <div class="illustration-item"><span class="illustration-icon">🌐</span><span class="illustration-text">انټرنیټ</span></div>
+                <div class="illustration-item"><span class="illustration-icon">💰</span><span class="illustration-text">بیلونه</span></div>
+            </div>
+        </div>
+    </section>
+    <!-- this is feature section -->
+
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>اساسي ځانګړتیاوې</h2>
+                <p>زموږ سیستم ټولنې مخابراتي خدماتو لپاره یو شه حل وړاندی کوي</p>
+            </div>
+            <div class="features-grid" id="featuresContainer">
+
+            </div>
+        </div>
+    </section>
+    <!-- CUSTOMER SECTION -->
+    <section class="customers-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>اخیراضافه شوي مشتریان</h2>
+                <p>د افغان وایرلس مشتریانو لیست</p>
+            </div>
+
+            <!-- REMOVE EXTRA DIV -->
+            <div class="customers-grid" id="customersContainer"></div>
+
+        </div>
+    </section>
+
+
+    <!--this is simcard section-->
+    <section class="simcards-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>سیمکارتونه</h2>
+                <p>د افغان وایرلس سیمکارتونو لیست</p>
+            </div>
+            <div class="simcards-grid" id="simcardsContainer"></div>
+        </div>
+    </section>
+
+    <!-- BILLING SECTION -->
+    <section class="billing-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>بیل معلومات</h2>
+                <p>د مشتریانو بیل فکتور</p>
+            </div>
+
+            <div class="billing-grid" id="billingContainer"></div>
+
+        </div>
+    </section>
+
+    <!--this is modules section-->
+    <section class="modules-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>سیستم ماډلونه</h2>
+                <p>د سیستم ټولې اصلي برخې</p>
+            </div>
+            <div class="modules-grid" id="modulesContainer"></div>
+        </div>
+    </section>
+
+
+    <section class="objectives-section">
+        <div class="container">
+            <div class="section-title section-title-white">
+                <h2>د سیستم موخې</h2>
+                <p>زموږ سیستم دا اهداف لري</p>
+            </div>
+            <div class="objectives-grid" id="objectivesContainer"></div>
+        </div>
+    </section>
+
+
+    <section class="demo-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>سیستم جوړیشت</h2>
+                <p>زموږ سیستم یوه جوړیشت وګورئ</p>
+            </div>
+            <div class="demo-grid">
+                <div class="demo-box">
+                    <div class="demo-preview">📱</div>
+                    <div class="demo-content">
+                        <h3>مشتری پوروپایل</h3>
+                        <p>د مشتریانو لپاره آسان او کارپوه مرکز.</p>
+                    </div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-preview">📊</div>
+                    <div class="demo-content">
+                        <h3>ادارې دشبورډ</h3>
+                        <p>د ادارې لپاره شه دشبورډ.</p>
+                    </div>
+                </div>
+                <div class="demo-box">
+                    <div class="demo-preview">💵</div>
+                    <div class="demo-content">
+                        <h3>بیل سیستم</h3>
+                        <p>دبیل آسان او چټک سیستم</p>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-button"><a href="features.html" class="btn btn-primary">جوړیشت وګورئ</a></div>
+        </div>
+    </section>
+
+
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>مشتریانو نظرونه</h2>
+                <p>زموږ مشتریانو تجربې</p>
+            </div>
+            <div class="testimonials-grid" id="testimonialsContainer"></div>
+        </div>
+    </section>
+
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>پوښتل شوي پوښتنې</h2>
+                <p>د عامو پوښنو ځوابونه</p>
+            </div>
+            <div class="faq-list" id="faqContainer"></div>
+        </div>
+    </section>
+    <!-- <section class="api-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>سیستم خبرونه</h2>
+                <p>د API څخه راخیستل شوي معلومات</p>
+            </div>
+
+            <div id="apiContainer"></div>
+        </div>
+    </section> -->
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="footer-section">
+                    <h3>د اړیکې معلومات</h3>
+                    <p>📶 کابل، افغانستان</p>
+                    <p>📞 0700123456</p>
+                    <p>✉️ info@awcc.af</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>تړل شوي لینکونه</h3>
+                    <a href="index.html">کور پاڼه</a>
+                    <a href="features.html">ځانګړتیاوې</a>
+                    <a href="customers.html">مشتریان</a>
+                    <a href="simcards.html">سیمکارتونه</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>قانوني معلومات</h3>
+                    <a href="#">دمحرمیت پالیسي</a>
+                    <a href="#">د کارونې شرایط</a>
+                    <a href="#">داړیکې معلومات</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>ټولې نیکې</h3>
+                    <div class="social-links">
+
+
+
+                        <a href="https://www.facebook.com/myawcc/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 د افغان وایرلس مخابراتي شرکت. ټول حقونه خوندي دي</p>
+            </div>
+        </div>
+    </footer>
+    <script defer type="module" src="./js/script.js"></script>
+</body>
+
+</html>

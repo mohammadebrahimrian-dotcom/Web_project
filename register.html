@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نوم لیکنه - AWCC سیستم</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <script src="js/api/users.js"></script>
+    <script>
+        // Check if user is already logged in, if so redirect to home
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentUser = fakeApi.getCurrentUser();
+            if (currentUser) {
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="container header-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">📡</span>
+                    <span>AWCC سیستم</span>
+                </a>
+
+                <!-- ✅ Hidden Checkbox -->
+                <input type="checkbox" id="menu-toggle">
+
+                <!-- ✅ Hamburger -->
+                <label for="menu-toggle" class="mobile-menu-toggle">
+                    <span></span><span></span><span></span>
+                </label>
+
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">کور پاڼه</a></li>
+                        <li><a href="features.html">ځانګړتیاوې</a></li>
+                        <li><a href="customers.html">مشتریان</a></li>
+                        <li><a href="simcards.html">سیمکارتونه</a></li>
+                        <li><a href="billing.html">بیل</a></li>
+                        <li><a href="contact.html">اړیکه</a></li>
+                    </ul>
+
+                    <div class="nav-buttons">
+                        <a href="#" class="btn btn-secondary">ننوتل</a>
+                        <a href="#" class="btn btn-highlight">نوم لیکنه</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Register Section -->
+        <section class="login-container">
+            <div class="login-box">
+                <div class="login-header">
+                    <h1>نوم لیکنه - AWCC سیستة</h1>
+                    <p>نوي حساب جوړئ</p>
+                </div>
+
+                <form class="login-form" id="registerForm" action="#" method="post">
+                    <div class="form-group">
+                        <label for="fullName">نام کامل</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="خپل نام کامل ولیکئ" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">یوزر نوم</label>
+                        <input type="text" id="username" name="username" placeholder="خپل کارن نوم ولیکئ" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">بریښنالیک</label>
+                        <input type="email" id="email" name="email" placeholder="خپل بریښنالیک ولیکئ" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">پټنوم</label>
+                        <input type="password" id="password" name="password" placeholder="خپل پټنوم ولیکئ" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">پټنوم بتایید کړئ</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="خپل پټنوم بتایید کړئ" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="agree"> زه د کارونې شرایط او د محرمیت پالیسي موافقت کولم
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">نوم لیکنه</button>
+                </form>
+
+                <div class="login-footer">
+                    <p> ډيره حساب لري؟ <a href="login.html">ننوتل</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>د اړیکې معلومات</h3>
+                        <p>📶 کابل، افغانستان</p>
+                        <p>📞 0700123456</p>
+                        <p>✉️ info@awcc.af</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>تړل شوي لینکونه</h3>
+                        <a href="index.html">کور پاڼه</a>
+                        <a href="features.html">ځانګړتیاوې</a>
+                        <a href="customers.html">مشتریان</a>
+                        <a href="simcards.html">سیمکارتونه</a>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>قانوني معلومات</h3>
+                        <a href="#">د محرمیت پالیسي</a>
+                        <a href="#">د کارونې شرایط</a>
+                        <a href="#">د تایدی condizioni</a>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>ټولې نیکې</h3>
+                        <div class="social-links">
+                            <a href="#" class="Facebook"><img src="facebook.png" alt="" width="40px"></a>
+                            <a href="#" class="Twitter"><img src="icons8-twitter-50.png" alt="" width="40px"></a>
+                            <a href="#" class="Instagram"><img src="instagram.png" alt="" width="40px"></a>
+                            <a href="#" class="LinkedIn"><img src="3d-linkedin-logo-icon-isolated-on-transparent-background-free-png.png" alt="" width="40px"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2026 د افغان وایرلس مخابراتي شرکت. ټول حقونه خوندي دی.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/form.js"></script>
+    </body>
+
+</html>

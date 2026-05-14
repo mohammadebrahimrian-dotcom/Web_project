@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>نوی حساب جوړول - AWCC</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- 🔥 INTERNAL STYLE -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Background */
+        
+        .login-container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            padding: 20px;
+        }
+        /* Card */
+        
+        .login-form {
+            width: 100%;
+            max-width: 380px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+        /* Title */
+        
+        .login-form h2 {
+            margin-bottom: 20px;
+            color: #0f172a;
+        }
+        /* Inputs */
+        
+        .login-form input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        
+        .login-form input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 6px rgba(59, 130, 246, 0.3);
+        }
+        /* Button */
+        
+        .login-form button {
+            width: 100%;
+            padding: 12px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        
+        .login-form button:hover {
+            background: #2563eb;
+        }
+        /* Text */
+        
+        .login-form p {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #334155;
+        }
+        
+        .login-form a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .login-form a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <form id="signupForm" class="login-form">
+
+            <h2>نوی حساب جوړ کړئ</h2>
+
+            <input type="text" id="username" placeholder="د کارن نوم" required>
+
+            <input type="password" id="password" placeholder="پټنوم" required>
+
+            <input type="password" id="confirmPassword" placeholder="پټنوم تایید کړئ" required>
+
+            <button type="submit">حساب جوړول</button>
+
+            <p>
+                حساب لرئ؟
+                <a href="login.html">ننوتل</a>
+            </p>
+
+        </form>
+
+    </div>
+
+    <script src="signup.js"></script>
+    <script src="js/include.js"></script>
+
+</body>
+
+</html>
